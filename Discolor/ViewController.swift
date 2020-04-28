@@ -30,7 +30,7 @@ class ViewController: NSViewController, NSWindowDelegate {
                 self.currentAppearance = name
                 if UserDefaults.standard.bool(forKey: AppDelegate.autoChangeKey) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                        try? (NSApp.delegate as! AppDelegate).changeColor(to: name == .darkAqua ? .dark : .light)
+                        try? (NSApp.delegate as! AppDelegate).changeColor(to: name == .darkAqua ? .dark : .light, activateDiscord: !UserDefaults.standard.bool(forKey: AppDelegate.doNotActivateDiscordDefaultsKey), returnFocus: !UserDefaults.standard.bool(forKey: AppDelegate.noReturnFocusDefaultsKey))
                     }
                 }
             }
@@ -50,15 +50,15 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
     
     @IBAction func light(sender: NSButton?) {
-        try? (NSApp.delegate as! AppDelegate).changeColor(to: .light)
+        try? (NSApp.delegate as! AppDelegate).changeColor(to: .light, activateDiscord: !UserDefaults.standard.bool(forKey: AppDelegate.doNotActivateDiscordDefaultsKey), returnFocus: !UserDefaults.standard.bool(forKey: AppDelegate.noReturnFocusDefaultsKey))
     }
 
     @IBAction func dark(sender: NSButton?) {
-        try? (NSApp.delegate as! AppDelegate).changeColor(to: .dark)
+        try? (NSApp.delegate as! AppDelegate).changeColor(to: .dark, activateDiscord: !UserDefaults.standard.bool(forKey: AppDelegate.doNotActivateDiscordDefaultsKey), returnFocus: !UserDefaults.standard.bool(forKey: AppDelegate.noReturnFocusDefaultsKey))
     }
     
     @IBAction func matchSystem(sender: NSButton?) {
-        try? (NSApp.delegate as! AppDelegate).changeColor(to: view.effectiveAppearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua ? .dark : .light)
+        try? (NSApp.delegate as! AppDelegate).changeColor(to: view.effectiveAppearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua ? .dark : .light, activateDiscord: !UserDefaults.standard.bool(forKey: AppDelegate.doNotActivateDiscordDefaultsKey), returnFocus: !UserDefaults.standard.bool(forKey: AppDelegate.noReturnFocusDefaultsKey))
     }
     
     @IBAction func autoChangeSwitched(sender: NSSwitch?) {
