@@ -8,6 +8,10 @@ A hacky macOS utility that manages your [Discord](https://discordapp.com) color 
 4. Turn on the switch to have Discolor automatically change Discord's color scheme when the system apparance changes.
 5. Add Discolor as a Login Item in the **Users & Groups** pane of System Preferences if desired.
 
+## Caveats
+* Pre-release versions of Discolor may not work reliably.
+* Discolor will not change Discord's color scheme if Discord is not running.
+
 ## How it Works
 To change Discord's color scheme, Discolor first activates Discord's window. It then sends Discord a series of keyboard shortcuts which:
 1. Open the Quick Switcher
