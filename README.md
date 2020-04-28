@@ -2,7 +2,7 @@
 A hacky macOS utility that manages your [Discord](https://discordapp.com) color scheme. It supports macOS Catalina and later.
 
 ## Installation
-1. Drag **Discolor.app** to your **Applications** folder.
+1. Drag [**Discolor.app**](https://github.com/anli5005/Discolor/releases/download/v1.0-alpha.1/Discolor.app.zip) to your **Applications** folder.
 2. Open Discolor. An icon (☯️) should appear in your status bar.
 3. Open System Preferences, navigate to **Security & Privacy**, click on the **Privacy** tab, and grant Discolor **Accessibility** permissions.
 4. Turn on the switch to have Discolor automatically change Discord's color scheme when the system apparance changes.
