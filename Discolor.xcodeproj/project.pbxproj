@@ -11,6 +11,7 @@
 		4A1E4B41244DD175005C3C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E4B40244DD175005C3C27 /* ViewController.swift */; };
 		4A1E4B43244DD17B005C3C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1E4B42244DD17B005C3C27 /* Assets.xcassets */; };
 		4A1E4B46244DD17B005C3C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1E4B44244DD17B005C3C27 /* Main.storyboard */; };
+		4ACFC9BA2458C3E0005C3C27 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4ACFC9B92458C3E0005C3C27 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4A1E4B45244DD17B005C3C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A1E4B47244DD17B005C3C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1E4B48244DD17B005C3C27 /* Discolor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Discolor.entitlements; sourceTree = "<group>"; };
+		4ACFC9B92458C3E0005C3C27 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		4A1E4B32244DD174005C3C27 = {
 			isa = PBXGroup;
 			children = (
+				4ACFC9B92458C3E0005C3C27 /* README.md */,
 				4A1E4B3D244DD175005C3C27 /* Discolor */,
 				4A1E4B3C244DD175005C3C27 /* Products */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACFC9BA2458C3E0005C3C27 /* README.md in Resources */,
 				4A1E4B43244DD17B005C3C27 /* Assets.xcassets in Resources */,
 				4A1E4B46244DD17B005C3C27 /* Main.storyboard in Resources */,
 			);
@@ -274,7 +278,7 @@
 				CODE_SIGN_ENTITLEMENTS = Discolor/Discolor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 9G475R3MEF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Discolor/Info.plist;
@@ -297,7 +301,7 @@
 				CODE_SIGN_ENTITLEMENTS = Discolor/Discolor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 9G475R3MEF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Discolor/Info.plist;

@@ -29,7 +29,8 @@ class ViewController: NSViewController, NSWindowDelegate {
             if name != self.currentAppearance {
                 self.currentAppearance = name
                 if UserDefaults.standard.bool(forKey: AppDelegate.autoChangeKey) {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    let delay = UserDefaults.standard.double(forKey: AppDelegate.autoChangeDelayKey)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + (delay == 0 ? 5 : delay)) {
                         try? (NSApp.delegate as! AppDelegate).changeColor(to: name == .darkAqua ? .dark : .light, activateDiscord: !UserDefaults.standard.bool(forKey: AppDelegate.doNotActivateDiscordDefaultsKey), returnFocus: !UserDefaults.standard.bool(forKey: AppDelegate.noReturnFocusDefaultsKey))
                     }
                 }

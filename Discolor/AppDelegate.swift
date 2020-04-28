@@ -25,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     static let autoChangeKey = "DiscolorAutomaticallyChangeOnAppearanceChange"
     static let doNotActivateDiscordDefaultsKey = "DiscolorDoNotActivateDiscord"
     static let noReturnFocusDefaultsKey = "DiscolorDoNotReactivateExistingWindow"
+    static let autoChangeDelayKey = "DiscolorAutoChangeDelay"
     var item: NSStatusItem!
     weak var window: NSWindow?
 
